@@ -2,10 +2,10 @@
 ARDMK_DIR     = $(realpath ../buildEnvironment/Arduino-Makefile)
 
 ARDMK_VENDOR = Seeeduino
-CMSIS_DIR = $(HOME)/Library/Arduino15/packages/Seeeduino/tools/CMSIS/5.4.0/CMSIS
+CMSIS_DIR = $(ARDUINO_PACKAGE_DIR)/Seeeduino/tools/CMSIS/5.4.0/CMSIS
 CPPFLAGS += -I$(CMSIS_DIR)/Core/Include/
 CPPFLAGS += -I$(CMSIS_DIR)/DSP/Include/
-CMSIS_ATMEL_DIR = $(HOME)/Library/Arduino15/packages/Seeeduino/tools/CMSIS-Atmel/1.2.1/CMSIS-Atmel/CMSIS
+CMSIS_ATMEL_DIR = $(ARDUINO_PACKAGE_DIR)/Seeeduino/tools/CMSIS-Atmel/1.2.1/CMSIS-Atmel/CMSIS
 RESET_CMD = $(PYTHON_CMD) $(ARDMK_DIR)/bin/ard-reset-arduino --zero $(MONITOR_PORT)
 # ARD_RESET_ARDUINO_PATH = $(ARDMK_DIR)/bin
 # BOSSA = /usr/local/bin/bossac --offset=0x4000

@@ -1,6 +1,6 @@
 buildEnvironment/
 libraries/
-
+src/build-*/
 
 # Prerequisites
 *.d
