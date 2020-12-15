@@ -13,9 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: getBuildEnvironment.sh
-      run: ./getBuildEnvironment
-    - name: getLibraries
+    - name: get build environment
+      run: ./getBuildEnvironment.sh
+    - name: get libraries
       run: ./getLibraries.sh
     - name: make
       run: make
