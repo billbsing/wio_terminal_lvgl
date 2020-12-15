@@ -18,4 +18,6 @@ jobs:
     - name: get libraries
       run: ./getLibraries.sh
     - name: make
-      run: make
+      run: |
+        cd src
+        make
