@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install arduino
-      run: sudo apt get arduino
+      run: sudo apt install arduino
     - name: get build environment
       run: ./getBuildEnvironment.sh
     - name: get libraries
