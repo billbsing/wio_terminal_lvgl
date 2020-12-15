@@ -17,8 +17,8 @@ jobs:
       run: sudo apt install arduino
     - name: setup arduino
       run: |
-        arduino-cli config add board_manager.additional_urls https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
-        arduino-cli board listall Seeeduino
+        arduino config add board_manager.additional_urls https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
+        arduino board listall Seeeduino
     - name: get build environment
       run: ./getBuildEnvironment.sh
     - name: get libraries
