@@ -21,7 +21,7 @@ jobs:
         arduino config add board_manager.additional_urls https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
         arduino board listall Seeeduino
       env:
-        DISPLAY=0:0
+        DISPLAY: 0:0
     - name: get build environment
       run: ./getBuildEnvironment.sh
     - name: get libraries
