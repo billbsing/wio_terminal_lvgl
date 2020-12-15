@@ -3,8 +3,8 @@
 This project is a reference build to get the WioTerminal working
 with the lvgl library.
 
-The code was originally copied from (Seed_arduino_lvGL)[https://github.com/Seeed-Studio/Seeed_Arduino_LvGL]
-and examples from (LVGL)[https://github.com/lvgl/lvgl]
+The code was originally copied from [Seed_arduino_lvGL](https://github.com/Seeed-Studio/Seeed_Arduino_LvGL)
+and examples from [LVGL](https://github.com/lvgl/lvgl)
 
 
 ## Setup

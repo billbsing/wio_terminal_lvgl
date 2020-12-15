@@ -1,3 +1,7 @@
+buildEnvironment/
+libraries/
+
+
 # Prerequisites
 *.d
 
