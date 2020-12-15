@@ -15,11 +15,13 @@ jobs:
     - uses: actions/checkout@v2
     - name: install arduino
       run: sudo apt install arduino
+    - name: install arduino cli
+      run: curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
     - name: setup arduino
       run: |
-        arduino config init
-        arduino config add board_manager.additional_urls https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
-        arduino board listall Seeeduino
+        arduino-cli config init
+        arduino-cli config add board_manager.additional_urls https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
+        arduino-cli board listall Seeeduino
       env:
         DISPLAY: 0:0
     - name: get build environment
