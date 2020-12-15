@@ -19,11 +19,8 @@ jobs:
       run: curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
     - name: setup arduino
       run: |
-        ./bin/arduino-cli config init
-        ./bin/arduino-cli config add board_manager.additional_urls https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
-        ./bin/arduino-cli board listall Seeeduino
-      env:
-        DISPLAY: 0:0
+        ./bin/arduino-cli config init --additional-urls https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
+        ./bin/arduino-cli core install Seeeduino:samd
     - name: get build environment
       run: ./getBuildEnvironment.sh
     - name: get libraries
