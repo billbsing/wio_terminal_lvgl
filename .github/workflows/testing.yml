@@ -1,0 +1,21 @@
+name: testing
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: getBuildEnvironment
+      run: ./getBuildEnvironment
+    - name: getLibraries
+      run: ./getLibraries
+    - name: make
+      run: make
