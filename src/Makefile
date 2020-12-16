@@ -19,7 +19,7 @@ USER_LIB_PATH = $(realpath ../libraries)
 F_CPU = 120000000L
 
 ARDUINO_LIBS =              \
-	Adafruit_ZeroDMA	\
+	SPI			\
 	Seeed_Arduino_LCD	\
 	lvgl
 
