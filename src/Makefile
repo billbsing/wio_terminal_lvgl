@@ -19,9 +19,8 @@ USER_LIB_PATH = $(realpath ../libraries)
 F_CPU = 120000000L
 
 ARDUINO_LIBS =              \
-	SPI						\
-	Adafruit_ZeroDMA		\
-    Seeed_Arduino_LCD		\
+	Adafruit_ZeroDMA	\
+	Seeed_Arduino_LCD	\
 	lvgl
 
 MONITOR_PORT = /dev/cu.usbmodem*

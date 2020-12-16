@@ -6,13 +6,16 @@ with the lvgl library.
 This just creates three buttons on the bottom of the display, the
 5 way switch left/right buttons changes focus, and click on the button.
 
-The 3 buttons at the top select one of the 3 lvgl buttons. 
+The 3 buttons at the top select one of the 3 lvgl buttons.
 
 The code was originally copied from [Seed_arduino_lvGL](https://github.com/Seeed-Studio/Seeed_Arduino_LvGL)
-and examples from [lvgl](https://github.com/lvgl/lvgl)
+and examples from [lvgl](https://github.com/lvgl/lvgl) library.
 
 
 ## Setup
+
+You first need to setup your arduino with the Seeed-Studio SAMD boards.
+See [Getting started with Wio Terminal](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/#software)
 
 To setup this project first clone the github repo:
 
