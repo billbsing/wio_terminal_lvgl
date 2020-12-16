@@ -11,7 +11,7 @@ This just creates three buttons on the bottom of the display, the
 
 If one of the 3 buttons at the top of the WioTerminal are pressed then one of the 3 lvgl buttons will be clicked.
 
-The code was originally copied from [Seed_arduino_lvGL](https://github.com/Seeed-Studio/Seeed_Arduino_LvGL)
+The code was originally copied from [Seed_arduino_LvGL](https://github.com/Seeed-Studio/Seeed_Arduino_LvGL)
 and examples from [lvgl](https://github.com/lvgl/lvgl) library.
 
 
