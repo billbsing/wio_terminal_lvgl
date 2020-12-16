@@ -10,6 +10,7 @@ RESET_CMD = $(PYTHON_CMD) $(ARDMK_DIR)/bin/ard-reset-arduino --zero $(MONITOR_PO
 BOSSA_OPTS = -d --info --erase --write --verify --reset --offset=0x4000
 ARDUINO_SKETCHBOOK = $(realpath ./)
 USER_LIB_PATH = $(realpath ../libraries)
+ARDUINO_LIB_PATH = $(ARDUINO_PLATFORM_LIB_PATH)
 
 F_CPU = 120000000L
 
