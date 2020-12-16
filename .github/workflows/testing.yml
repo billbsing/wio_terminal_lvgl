@@ -21,7 +21,6 @@ jobs:
       run: |
         ./bin/arduino-cli config init --additional-urls https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
         ./bin/arduino-cli core install Seeeduino:samd
-        ./bin/arduino-cli lib install AdafruitZeroDMA
     - name: get build environment
       run: ./getBuildEnvironment.sh
     - name: get libraries
