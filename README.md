@@ -34,7 +34,8 @@ You can now install the build environment and libraries:
 ```  bash
     # download the arduino build scripts
     $ ./getBuildEnvironment.sh
-    # get the lvgl library
+
+    # get the supporting libraries for this project
     $ ./getLibraries.sh
 ```
 
@@ -44,8 +45,10 @@ Build the project:
 
     # go to the src folder
     $ cd src
+
     # make the project
     $ make
+
     # upload the project
     $ make upload
 ```
