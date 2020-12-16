@@ -1,4 +1,7 @@
-# wio_terminal_lvgl
+![testing](https://github.com/billbsing/wio_terminal_lvgl/workflows/testing/badge.svg)
+
+# WioTerminal using the lvgl library
+
 
 This project is a reference build to get the WioTerminal working
 with the lvgl library.
