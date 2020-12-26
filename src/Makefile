@@ -1,3 +1,4 @@
+UNAME := $(shell uname)
 
 ARDMK_DIR     = $(realpath ../buildEnvironment/Arduino-Makefile)
 
@@ -20,7 +21,13 @@ ARDUINO_LIBS =              \
 	Seeed_Arduino_LCD	\
 	lvgl
 
-MONITOR_PORT = /dev/cu.usbmodem*
+ifeq ($(UNAME), Linux)
+	MONITOR_PORT = /dev/ttyACM*
+endif
+ifeq ($(UNAME), Darwin)
+	MONITOR_PORT = /dev/cu.usbmodem*
+endif
+
 BOARD_TAG = seeed_wio_terminal
 
 include $(ARDMK_DIR)/Sam.mk
